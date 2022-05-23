@@ -1,14 +1,28 @@
-package Assignment;
+package ch01;
 
+
+import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.Scanner;
 
-// ì…ë ¥, ì¶œë ¥, ë‹¬ë ¥ì •ë³´,
+// ÀÔ·Â, Ãâ·Â, ´Ş·ÂÁ¤º¸,
 class Cal {
     public void Ld(){
-        Scanner sc = new Scanner(System.in);
-
-        int day[][][] = new int[12][6][7];
-        String[] week = {"ì¼","ì›”","í™”","ìˆ˜","ëª©","ê¸ˆ","í† "};
+        Calendar cal = new Calendar();
+    	Scanner sc = new Scanner(System.in);
+        
+        int year = 0;
+        int month = 0;
+		int day = 0;
+		
+		cal.set(Calendar.DATE, 1);
+		int firstDay = cal.get(Calendar.DAY_OF_WEEK);
+		for (int i = 1; i < firstDay; i++) {
+			System.out.println("¤±\t");
+		    }
+		
+        int day1[][][] = new int[12][6][7];
+        String[] week = {"ÀÏ","¿ù","È­","¼ö","¸ñ","±İ","Åä"};
 
 
 
@@ -20,12 +34,12 @@ public class A5 {
         int year;
         int month;
 
-        System.out.println("[ë‹¬ë ¥ ì¶œë ¥ í”„ë¡œê·¸ë¨]");
-        System.out.print("ë‹¬ë ¥ì˜ ë…„ë„ë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš”.(yyyy):");
+        System.out.println("[´Ş·Â Ãâ·Â ÇÁ·Î±×·¥]");
+        System.out.print("´Ş·ÂÀÇ ³âµµ¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.(yyyy):");
         year = sc.nextInt();
-        System.out.print("ë‹¬ë ¥ì˜ ì›”ì„ ì…ë ¥í•´ ì£¼ì„¸ìš”.(mm):");
+        System.out.print("´Ş·ÂÀÇ ¿ùÀ» ÀÔ·ÂÇØ ÁÖ¼¼¿ä.(mm):");
         month = sc.nextInt();
-        System.out.println(String.format("[%4dë…„ %02dì›”]",year,month));
-
+        System.out.println(String.format("[%4d³â %02d¿ù]",year,month));
+        
     }
 }

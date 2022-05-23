@@ -1,20 +1,40 @@
-package Assignment;
+package ch01;
 
 import java.util.Scanner;
 
 public class A7 {
+
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
         int lotto[] = new int[6];
-        for (int i = 0; i < lotto.length; i++) {
-            int num = (int) (Math.random() * 45) + 1;
-            System.out.println(lotto[i]);
+        int lotNum;
+//        int n = 65 ;
+//        char test;
+        
+        System.out.println("[·Î¶Ç ´çÃ· ÇÁ·Î±×·¥]");
+        System.out.print("·Î¶Ç °³¼ö¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.(¼ýÀÚ1 ~10):");
+        lotNum = sc.nextInt();
+        for(int i = 1; i <= lotNum; i++) {
+        	int n = 64 + i;
+        	char test = (char)n;
+        	System.out.print(test + "  ");
+        	
         }
-        int lot;
-
-        System.out.println("[ë¡œë˜ ë‹¹ì²¨ í”„ë¡œê·¸ëž¨]");
-        System.out.println("ë¡œë˜ ê°œìˆ˜ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”.(ìˆ«ìž1 ~10)");
-
+        for (int j = 1; j <= 6; j++) {
+            int num = (int) (Math.random() * 45) + 1;
+            System.out.print(num + " ");
+            
+     	}
+        System.out.println();
+//        for() //·Î¶Ç Ãâ·Â;
+        System.out.println("[·Î¶Ç ¹ßÇ¥]");
+        for (int k = 0; k <= 6; k++) {
+            int num1 = (int) (Math.random() * 45) + 1;
+            System.out.print(num1);
+        }    
     }
+    	
+
+   
 }

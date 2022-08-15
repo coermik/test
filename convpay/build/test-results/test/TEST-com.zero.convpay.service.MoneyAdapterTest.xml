@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zero.convpay.service.MoneyAdapterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-08-15T09:30:15" hostname="DESKTOP-UT3DH6A" time="0.012">
+  <properties/>
+  <testcase name="money_use_cancel_fail()" classname="com.zero.convpay.service.MoneyAdapterTest" time="0.002"/>
+  <testcase name="money_use_success()" classname="com.zero.convpay.service.MoneyAdapterTest" time="0.001"/>
+  <testcase name="money_use_fail()" classname="com.zero.convpay.service.MoneyAdapterTest" time="0.003"/>
+  <testcase name="money_use_cancel_success()" classname="com.zero.convpay.service.MoneyAdapterTest" time="0.002"/>
+  <system-out><![CDATA[MoneyAdapter.use : 99
+MoneyAdapter.use : 1000000
+MoneyAdapter.use : 1000001
+MoneyAdapter.use : 101
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
